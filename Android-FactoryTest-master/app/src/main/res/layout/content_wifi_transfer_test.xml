@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".items.WiFiTransferTestActivity">
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi_transfer_test_prompt"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/v_margin"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/btn_start"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColor="@drawable/btn_text_selector"
+            android:textOff="@string/wifi_transfer_test_start"
+            android:textOn="@string/wifi_transfer_test_stop" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_transfer_test_uplink"
+                android:textSize="@dimen/text_normal" />
+
+            <RadioButton
+                android:id="@+id/rb_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/wifi_transfer_test_downlink"
+                android:textSize="@dimen/text_normal" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/wifi_transfer_test_localip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:id="@+id/tv_local_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="0.0.0.0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/wifi_transfer_test_serverip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:id="@+id/edt_server_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/edt_line"
+            android:digits="0123456789."
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:text="0.0.0.0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/v_margin"
+        android:layout_weight="1"
+        android:background="@drawable/bg_container" />
+
+</LinearLayout>

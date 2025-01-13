@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:sharedUserId="android.uid.system"
+    package="com.ayst.factorytest">
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"  android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission
+        android:name="android.permission.LOCAL_MAC_ADDRESS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FactoryTest">
+        <activity android:name=".items.WiFiTransferTestActivity" />
+        <activity android:name=".items.LedTestActivity" />
+        <activity android:name=".items.PwmTestActivity" />
+        <activity android:name=".items.ND01TestActivity" />
+        <activity android:name=".items.WiegandTestActivity" />
+        <activity android:name=".items.GpioTestActivity" />
+        <activity android:name=".items.UartTestActivity" />
+        <activity android:name=".items.SdcardTestActivity" />
+        <activity android:name=".items.UsbTestActivity"
+            tools:targetApi="m" />
+        <activity android:name=".items.WatchdogTestActivity" />
+        <activity android:name=".items.RegularBootTestActivity" />
+        <activity android:name=".items.NarTestActivity" />
+        <activity android:name=".items.AccSensorActivity" />
+        <activity android:name=".items.TemperatureSensorTestActivity" />
+        <activity android:name=".items.LightSensorActivity" />
+        <activity android:name=".items.BatteryTestActivity" />
+        <activity android:name=".items.BacklightTestActivity" />
+        <activity android:name=".items.HumanSensorActivity" />
+        <activity android:name=".items.CameraTestActivity" />
+        <activity android:name=".items.KeyTestActivity" />
+        <activity android:name=".items.RecordTestActivity" />
+        <activity android:name=".items.SpeakerTestActivity" />
+        <activity android:name=".items.TouchTestActivity" />
+        <activity android:name=".items.LcdTestActivity" />
+        <activity android:name=".items.MobileNetTestActivity" />
+        <activity android:name=".items.EthernetTestActivity" />
+        <activity android:name=".items.BluetoothTestActivity" />
+        <activity android:name=".items.WifiTestActivity" />
+        <activity android:name=".items.InfoTestActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="locale|screenSize|screenLayout|uiMode|layoutDirection"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

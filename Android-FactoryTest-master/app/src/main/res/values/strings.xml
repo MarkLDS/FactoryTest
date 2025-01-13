@@ -1,0 +1,201 @@
+<resources>
+    <string name="app_name">Factory Test</string>
+    <string name="success">SUCCESS</string>
+    <string name="fail">FAIL</string>
+    <string name="ignore">IGNORE</string>
+    <string name="start">START</string>
+    <string name="note">NOTE</string>
+    <string name="ok">OK</string>
+
+    <string name="test_item_info">Information</string>
+    <string name="test_item_wifi">WiFi</string>
+    <string name="test_item_bluetooth">Bluetooth</string>
+    <string name="test_item_ethernet">Ethernet</string>
+    <string name="test_item_mobile">Mobile network</string>
+    <string name="test_item_timingboot">Timing Boot</string>
+    <string name="test_item_watchdog">Watchdog</string>
+    <string name="test_item_uart">Uart</string>
+    <string name="test_item_humansensor">Human Sensor</string>
+    <string name="test_item_accsensor">Acc Sensor</string>
+    <string name="test_item_display">Display</string>
+    <string name="test_item_touch">Touch Panel</string>
+    <string name="test_item_speader">Speaker</string>
+    <string name="test_item_mic">Microphone</string>
+    <string name="test_item_micarray">Microphone Array</string>
+    <string name="test_item_key">Key</string>
+    <string name="test_item_camera">Camera</string>
+    <string name="test_item_backlight">Backlight</string>
+    <string name="test_item_battery">Battery</string>
+    <string name="test_item_light">Light Sensor</string>
+    <string name="test_item_tempsensor">Temperature-Humidity Sensor</string>
+    <string name="test_item_usb">USB</string>
+    <string name="test_item_sdcard">sdcard</string>
+    <string name="test_item_gpio">GPIO</string>
+    <string name="test_item_wiegand">Wiegand</string>
+    <string name="test_item_nd01">Distance Sensor</string>
+    <string name="test_item_pwm">PWM</string>
+    <string name="test_item_led">LED</string>
+    <string name="test_item_wifi_transfer">WiFi Transfer</string>
+
+    <!--MainActivity-->
+    <string name="main_scan_qrcode_tips">Scan the QR code to export the test results.</string>
+    <string name="main_show_qrcode">Show QRCode</string>
+    <string name="main_clean_result">Clean Result</string>
+
+    <!--    WiFiTestActivity-->
+    <string name="wifi_test_connected">Connected</string>
+    <string name="wifi_test_connecting">Connecting</string>
+    <string name="wifi_test_authenticating">Authenticating</string>
+    <string name="wifi_test_disconnected">Disconnected</string>
+    <string name="wifi_test_obtaining_ipaddr">Obtaining ip</string>
+    <string name="wifi_test_toast">"The scanning SSID %1$s signal strength needs to be greater than %2$d db."</string>
+    <string name="wifi_test_prompt">Scanning WiFi hotspots...</string>
+
+    <!--    AccSensorActivity-->
+    <string name="acc_test_prompt">Put the device horizontally, horizontally, and vertically until X/Y/Z turn green.</string>
+
+    <!--    BacklightTestActivity-->
+    <string name="backlight_test_prompt">Please slowly drag the progress bar to the far left and right to observe whether the screen brightness changes linearly and naturally.</string>
+
+    <!--    BatteryTestActivity-->
+    <string name="battery_test_status">Battery Status:</string>
+    <string name="battery_test_plugged">Charging Type:</string>
+    <string name="battery_test_health">Health Status:</string>
+    <string name="battery_test_level">Level:</string>
+    <string name="battery_test_voltage">Voltage:</string>
+    <string name="battery_test_temperature">Temperature:</string>
+    <string name="battery_test_scale">Scale:</string>
+    <string name="battery_test_type">Technology:</string>
+    <string name="battery_test_status_unknow">unknown</string>
+    <string name="battery_test_status_charging">charging</string>
+    <string name="battery_test_status_discharging">discharging</string>
+    <string name="battery_test_status_not_charging">not charging</string>
+    <string name="battery_test_status_full">full</string>
+    <string name="battery_test_health_unknow">unknown</string>
+    <string name="battery_test_health_good">good</string>
+    <string name="battery_test_health_overheat">over heat</string>
+    <string name="battery_test_health_dead">dead</string>
+    <string name="battery_test_health_overvoltage">over voltage</string>
+    <string name="battery_test_health_unspecified">unspecified</string>
+
+    <!--    BluetoothTestActivity-->
+    <string name="bluetooth_test_prompt">Scanning Bluetooth devices...</string>
+
+    <!--    CameraTestActivity-->
+    <string name="camera_test_prompt">Opening camera...</string>
+
+    <!--    GpioTestActivity-->
+    <string name="gpio_test_prompt">Each GPIO will output high and low levels alternately (1 second interval). Please check whether the output voltage of each GPIO is normal.</string>
+
+    <!--    HumanSensorActivity-->
+    <string name="human_test_prompt_far">Move away from the device or hold still (5 seconds) and observe whether the dots below show red.</string>
+    <string name="human_test_prompt_near">Please approach the device and remain active and observe whether the dots below show green.</string>
+
+    <!--    InfoTestActivity-->
+    <string name="info_test_model">Model:</string>
+    <string name="info_test_android_version">Android Version:</string>
+    <string name="info_test_firmware_version">Firmware Version:</string>
+    <string name="info_test_wifi_mac">WiFi MAC:</string>
+    <string name="info_test_bt_mac">Bluetooth MAC:</string>
+    <string name="info_test_eth_mac">Ethernet MAC:</string>
+    <string name="info_test_sn">SN:</string>
+    <string name="info_test_rom_size">ROM Size:</string>
+    <string name="info_test_ram_size">RAM Size:</string>
+    <string name="info_test_resolution">Resolution:</string>
+    <string name="info_test_imei">IMEI:</string>
+
+    <!--    KeyTestActivity-->
+    <string name="key_test_prompt">Please press all the keys below in sequence.</string>
+
+    <!--    LcdTestActivity-->
+    <string name="lcd_test_prompt">Whether the red, green, blue, yellow, grey, black and crosstalk interfaces are displayed in the above steps respectively?</string>
+    <string name="lcd_test_click">Click the screen to continue</string>
+
+    <!--    LedTestActivity-->
+    <string name="led_test_prompt">Each LED will light up in sequence, please observe the LED status.</string>
+
+    <!--    LightSensorActivity-->
+    <string name="light_test_prompt">Please check if the pointer changes according to the light intensity.</string>
+
+    <!--    MicTestActivity-->
+    <string name="mic_test_prompt">Please click "Record", and speak loudly with the microphone aligned, check whether the pointer below swings, click "Play" button after recording, check whether the sound playback is normal.</string>
+    <string name="mic_test_record">Record</string>
+    <string name="mic_test_play">Play</string>
+
+    <!--    MobileNetTestActivity-->
+    <string name="mobile_net_test_type">Network Type:</string>
+    <string name="mobile_net_test_signal">Signal Strength:</string>
+    <string name="mobile_net_test_sim">SIM Card:</string>
+    <string name="mobile_net_test_insert">Inserted</string>
+    <string name="mobile_net_test_not_insert">Not Insert</string>
+
+    <!--    NarTestActivity-->
+    <string name="nar_test_prompt">Please speak into the microphone and observe whether the recording data of the following channels changes, and whether the sound playback is normal.</string>
+
+    <!--    ND01TestActivity-->
+    <string name="nd01_test_calibration">calibration</string>
+    <string name="nd01_test_next">next</string>
+    <string name="nd01_test_nonlinear_calibration">Nonlinear Calibration</string>
+    <string name="nd01_test_nonlinear_calibration_prompt">Use a white plane with a reflectivity of about 90%, fix the device, parallel to the target plane, keep the distance at 150mm, click the [Calibration] button, wait 15 seconds for the calibration to complete, and click [Next].</string>
+    <string name="nd01_test_nonlinear_calibration_note">Note:\n* Avoid calibrating in scenes with strong ambient light. \n* The calibration target is a white plane with a reflectivity of about 90%. \n* The module is parallel to the calibration target. \n* The default calibration distance is 150mm. \n* It should be noted that there should be no other objects in the field of view of the transmitter of the device.</string>
+    <string name="nd01_test_cover_calibration">Cover Calibration</string>
+    <string name="nd01_test_cover_calibration_prompt">Use a gray plane with a reflectivity of about 18% to fix the device, parallel to the target plane, and keep the distance at 800mm. Click the [Calibrate] button, wait for 15 seconds to complete the calibration, and click [Next].</string>
+    <string name="nd01_test_cover_calibration_note">Note:\n* Avoid calibrating in scenes with strong ambient light. \n* The calibration target is a gray plane with a reflectivity of about 18%. \n* The module is parallel to the calibration target. \n* The default calibration distance is 800mm. \n* It should be noted that there should be no other objects in the field of view of the transmitter of the device.</string>
+    <string name="nd01_test_range_prompt">Use a gray plane with a reflectivity of about 18% to fix the device, parallel to the target plane, and keep the distance at 300mm. Check whether the distance value obtained below is accurate (the error is less than 30mm).</string>
+
+    <!--PwmTestActivity-->
+    <string name="pwm_test_prompt">Each PWM will be output in sequence according to the duty cycle configured by the parameters. Please observe whether the PWM device is working normally (the PWM device may be LED lights, motors, etc.).</string>
+
+    <!--    RegularBootTestActivity-->
+    <string name="regularboot_test_prompt">Testing the timer switch...</string>
+
+    <!--    SdcardTestActivity-->
+    <string name="sdcard_test_prompt">Please insert the sdcard card and observe whether the following table can correctly display all device paths.</string>
+
+    <!--    SpeakerTestActivity-->
+    <string name="speaker_test_prompt">Can you hear the sound of the speaker, and there is no broken sound, noise, distortion, etc.?</string>
+
+    <!--    TemperatureSensorTestActivity-->
+    <string name="temperature_test_prompt">Is the temperature and humidity consistent with that of a professional thermo-hygrometer?</string>
+    <string name="temperature_test_temp_header">Temperature(℃)</string>
+    <string name="temperature_test_humidity_header">Humidity(%)</string>
+
+    <!--    TouchTestActivity-->
+    <string name="touch_test_prompt">Please line the screen to connect all the rectangles.</string>
+
+    <!--    UartTestActivity-->
+    <string name="uart_test_prompt">Please observe the following serial port test results (pass in green, fail in red).</string>
+
+    <!--    UsbTestActivity-->
+    <string name="usb_test_prompt">Please insert any USB device (U disk, mouse, keyboard, etc.) into the USB port to be tested in turn, and check whether the following table can correctly display all device paths.</string>
+
+    <!--    WatchdogTestActivity-->
+    <string name="watchdog_test_prompt">Testing watchdog...</string>
+
+    <!--    WiegandTestActivity-->
+    <string name="wiegand_test_write">Wiegand Writes</string>
+    <string name="wiegand_test_write_prompt">Observe whether the Wiegand peripheral successfully receives data</string>
+    <string name="wiegand_test_read">Wiegand Read</string>
+    <string name="wiegand_test_read_prompt">Swipe the card (access control card, bus card, work card, etc.) to see if the card number can be read out correctly</string>
+
+    <!--    WiFiTransferTestActivity-->
+    <string name="wifi_transfer_test_start">Start</string>
+    <string name="wifi_transfer_test_stop">Stop</string>
+    <string name="wifi_transfer_test_uplink">Uplink</string>
+    <string name="wifi_transfer_test_downlink">Downlink</string>
+    <string name="wifi_transfer_test_localip">Local IP:</string>
+    <string name="wifi_transfer_test_serverip">Server IP:</string>
+    <string name="wifi_transfer_test_prompt">The device will automatically connect to the WiFi access point named (%1$s). Please check uplink and downlink respectively and click the Start button to test.</string>
+    <string name="wifi_transfer_test_msg_downlink">Please run the \'iperf -c %1$s -i 1 -t 60 -w 1m\' command and view the test result on the computer.</string>
+    <string name="wifi_transfer_test_msg_uplink">Please run the \'iperf -s\' command on the computer and view the test result on the device.</string>
+    <string name="wifi_transfer_test_serverip_invalid">Invalid server ip</string>
+    <string name="wifi_transfer_test_connect_success">WiFi (%1$s) connected</string>
+    <string name="wifi_transfer_test_connect_fail">Connect WiFi (%1$s) failed</string>
+
+    <!--    TestResultExport-->
+    <string name="rest_result">"Test result (%1$s)\n\n"</string>
+    <string name="rest_result_total">"Total %1$s items\n"</string>
+    <string name="rest_result_success">"Pass %1$s items\n"</string>
+    <string name="rest_result_fail">"Fail %1$s items\n"</string>
+    <string name="rest_result_ignore">"Ignore %1$s items\n"</string>
+</resources>

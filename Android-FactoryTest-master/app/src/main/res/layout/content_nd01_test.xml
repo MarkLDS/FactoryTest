@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".items.ND01TestActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_cal1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nd01_test_nonlinear_calibration"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/v_margin"
+            android:text="@string/nd01_test_nonlinear_calibration_prompt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/v_margin"
+            android:gravity="left"
+            android:text="@string/nd01_test_nonlinear_calibration_note"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <Button
+            android:id="@+id/btn_cal1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/v_margin"
+            android:enabled="false"
+            android:text="@string/nd01_test_calibration"
+            android:textColor="@drawable/btn_text_selector" />
+
+        <Button
+            android:id="@+id/btn_step1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/nd01_test_next"
+            android:textColor="@drawable/btn_text_selector" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_cal2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nd01_test_cover_calibration"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/v_margin"
+            android:text="@string/nd01_test_cover_calibration_prompt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/v_margin"
+            android:gravity="left"
+            android:text="@string/nd01_test_cover_calibration_note"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <Button
+            android:id="@+id/btn_cal2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/v_margin"
+            android:text="@string/nd01_test_calibration"
+            android:textColor="@drawable/btn_text_selector" />
+
+        <Button
+            android:id="@+id/btn_step2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/nd01_test_next"
+            android:textColor="@drawable/btn_text_selector" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_distance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/nd01_test_range_prompt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0mm"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_big"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</FrameLayout>

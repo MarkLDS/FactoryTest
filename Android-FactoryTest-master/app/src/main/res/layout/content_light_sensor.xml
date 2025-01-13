@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".items.LightSensorActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/light_test_prompt"
+        android:textSize="@dimen/text_normal"
+        android:textColor="@color/black"/>
+
+    <com.ayst.dbv.DashboardView
+        android:id="@+id/dashboard"
+        android:layout_width="@dimen/dashboard_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:dbv_firstColor="@color/green"
+        app:dbv_secondColor="@color/yellow"
+        app:dbv_thirdColor="@color/red"
+        app:dbv_max="5000"
+        app:dbv_min="0"
+        app:dbv_section="10"
+        app:dbv_portion="10"
+        app:dbv_lineWidth="1dp"
+        app:dbv_colorWidth="@dimen/dashboard_color_width"
+        app:dbv_colorPadding="@dimen/dashboard_color_padding"
+        app:dbv_longScaleLength="@dimen/dashboard_long_scale_length"
+        app:dbv_shortScaleLength="@dimen/dashboard_short_scale_length"
+        app:dbv_startAngle="180"
+        app:dbv_sweepAngle="180"
+        app:dbv_value="0"
+        app:dbv_showValueText="true"
+        app:dbv_showPointerRange="true"
+        app:dbv_firstRange="20"
+        app:dbv_secondRange="40"
+        app:dbv_headerText="nits"
+        app:dbv_headerTextSize="@dimen/text_normal"
+        app:dbv_headerTextColor="@color/black"
+        app:dbv_pointerColor="@color/black"
+        app:dbv_minPointerColor="@color/black_30"
+        app:dbv_maxPointerColor="@color/black_30"
+        app:dbv_scaleColor="@color/black"
+        app:dbv_scaleTextSize="@dimen/text_small" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".items.BacklightTestActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/backlight_test_prompt"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_normal" />
+
+    <SeekBar
+        android:id="@+id/seekbar_backlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="10dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/h_margin"
+        android:layout_marginEnd="@dimen/h_margin"
+        android:max="255"
+        android:progress="0"/>
+
+</RelativeLayout>
