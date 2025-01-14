@@ -199,4 +199,7 @@
     <string name="rest_result_success">"通过 %1$s 项\n"</string>
     <string name="rest_result_fail">"失败 %1$s 项\n"</string>
     <string name="rest_result_ignore">"忽略 %1$s 项\n"</string>
+    <string name="vibrate_is_ok">马达是否在震动？</string>
+    <string name="test_vibrate">震动</string>
+
 </resources>

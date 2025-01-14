@@ -65,6 +65,7 @@
         <activity android:name=".items.BluetoothTestActivity" />
         <activity android:name=".items.WifiTestActivity" />
         <activity android:name=".items.InfoTestActivity" />
+        <activity android:name=".items.VibrateTestActivity" />
         <activity
             android:name=".MainActivity"
             android:configChanges="locale|screenSize|screenLayout|uiMode|layoutDirection">

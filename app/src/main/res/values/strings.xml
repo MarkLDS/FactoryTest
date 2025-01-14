@@ -198,4 +198,6 @@
     <string name="rest_result_success">"Pass %1$s items\n"</string>
     <string name="rest_result_fail">"Fail %1$s items\n"</string>
     <string name="rest_result_ignore">"Ignore %1$s items\n"</string>
+    <string name="vibrate_is_ok">Is the motor vibrating？</string>
+    <string name="test_vibrate">Vibrate</string>
 </resources>

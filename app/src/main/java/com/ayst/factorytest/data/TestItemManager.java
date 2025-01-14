@@ -30,6 +30,7 @@ import com.ayst.factorytest.items.TemperatureSensorTestActivity;
 import com.ayst.factorytest.items.TouchTestActivity;
 import com.ayst.factorytest.items.UartTestActivity;
 import com.ayst.factorytest.items.UsbTestActivity;
+import com.ayst.factorytest.items.VibrateTestActivity;
 import com.ayst.factorytest.items.WatchdogTestActivity;
 import com.ayst.factorytest.items.WiFiTransferTestActivity;
 import com.ayst.factorytest.items.WiegandTestActivity;
@@ -121,6 +122,7 @@ public class TestItemManager {
 //光感        mItemTargets.put("light", new TestItem(sContext.getString(R.string.test_item_light), LightSensorActivity.class));
 //温湿度        mItemTargets.put("temp", new TestItem(sContext.getString(R.string.test_item_tempsensor), TemperatureSensorTestActivity.class));
         mItemTargets.put("usb", new TestItem("usb", sContext.getString(R.string.test_item_usb), UsbTestActivity.class));
+        mItemTargets.put("vibrate", new TestItem("vibrate", sContext.getString(R.string.test_vibrate), VibrateTestActivity.class));
 //sd卡        mItemTargets.put("sd", new TestItem(sContext.getString(R.string.test_item_sdcard), SdcardTestActivity.class));
 //GPIO        mItemTargets.put("gpio", new TestItem(sContext.getString(R.string.test_item_gpio), GpioTestActivity.class));
 //        mItemTargets.put("wiegand", new TestItem(sContext.getString(R.string.test_item_wiegand), WiegandTestActivity.class));
