@@ -148,10 +148,11 @@ public class MainActivity extends BaseActivity {
         mCleanResultBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SPUtils.get(MainActivity.this).clear();
-                mTestItems = TestItemManager.getInstance(getApplicationContext()).loadTestItems();
-                mTestItemAdapter.setList(mTestItems);
-                mTestItemAdapter.notifyDataSetChanged();
+                        SPUtils.get(MainActivity.this).clear();
+                        mTestItems = TestItemManager.getInstance(getApplicationContext()).loadTestItems();
+
+                        mTestItemAdapter.setList(mTestItems);
+                        mTestItemAdapter.notifyDataSetChanged();
             }
         });
 

@@ -67,8 +67,7 @@
         <activity android:name=".items.InfoTestActivity" />
         <activity
             android:name=".MainActivity"
-            android:configChanges="locale|screenSize|screenLayout|uiMode|layoutDirection"
-            android:exported="true">
+            android:configChanges="locale|screenSize|screenLayout|uiMode|layoutDirection">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

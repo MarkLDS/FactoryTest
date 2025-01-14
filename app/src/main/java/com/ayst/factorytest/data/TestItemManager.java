@@ -82,6 +82,8 @@ public class TestItemManager {
         loadConfig();
 
         if (mTestItems.isEmpty()) {
+            mItemTargets.clear();
+            bindTargets();
             Log.i(TAG, "config does not exist, use default");
             for (Map.Entry<String, TestItem> entry : mItemTargets.entrySet()) {
                 mTestItems.add(entry.getValue());
@@ -91,42 +93,42 @@ public class TestItemManager {
     }
 
     private void bindTargets() {
-        mItemTargets.put("info", new TestItem(sContext.getString(R.string.test_item_info), InfoTestActivity.class));
+        mItemTargets.put("info", new TestItem("info", sContext.getString(R.string.test_item_info), InfoTestActivity.class));
 
         // 全自动测试项（自动测试项放前面）
-        mItemTargets.put("wifi", new TestItem(sContext.getString(R.string.test_item_wifi), WifiTestActivity.class));
-        mItemTargets.put("bt", new TestItem(sContext.getString(R.string.test_item_bluetooth), BluetoothTestActivity.class));
-        mItemTargets.put("eth", new TestItem(sContext.getString(R.string.test_item_ethernet), EthernetTestActivity.class));
-        mItemTargets.put("mobile", new TestItem(sContext.getString(R.string.test_item_mobile), MobileNetTestActivity.class));
-        mItemTargets.put("timingboot", new TestItem(sContext.getString(R.string.test_item_timingboot), RegularBootTestActivity.class));
-        mItemTargets.put("watchdog", new TestItem(sContext.getString(R.string.test_item_watchdog), WatchdogTestActivity.class));
-        mItemTargets.put("uart", new TestItem(sContext.getString(R.string.test_item_uart), UartTestActivity.class));
+        mItemTargets.put("wifi", new TestItem("wifi", sContext.getString(R.string.test_item_wifi), WifiTestActivity.class));
+        mItemTargets.put("bt", new TestItem("bt", sContext.getString(R.string.test_item_bluetooth), BluetoothTestActivity.class));
+//以太网        mItemTargets.put("eth", new TestItem(sContext.getString(R.string.test_item_ethernet), EthernetTestActivity.class));
+//移动网络        mItemTargets.put("mobile", new TestItem(sContext.getString(R.string.test_item_mobile), MobileNetTestActivity.class));
+//定时开关机        mItemTargets.put("timingboot", new TestItem(sContext.getString(R.string.test_item_timingboot), RegularBootTestActivity.class));
+//看门狗        mItemTargets.put("watchdog", new TestItem(sContext.getString(R.string.test_item_watchdog), WatchdogTestActivity.class));
+//串口    mItemTargets.put("uart", new TestItem(sContext.getString(R.string.test_item_uart), UartTestActivity.class));
 
         // 半自动测试项
-        mItemTargets.put("human", new TestItem(sContext.getString(R.string.test_item_humansensor), HumanSensorActivity.class));
-        mItemTargets.put("acc", new TestItem(sContext.getString(R.string.test_item_accsensor), AccSensorActivity.class));
+//人体感应        mItemTargets.put("human", new TestItem(sContext.getString(R.string.test_item_humansensor), HumanSensorActivity.class));
+        mItemTargets.put("acc", new TestItem("acc", sContext.getString(R.string.test_item_accsensor), AccSensorActivity.class));
 
         // 人工测试项（人工测试项放后面）
-        mItemTargets.put("display", new TestItem(sContext.getString(R.string.test_item_display), LcdTestActivity.class));
-        mItemTargets.put("touch", new TestItem(sContext.getString(R.string.test_item_touch), TouchTestActivity.class));
-        mItemTargets.put("spk", new TestItem(sContext.getString(R.string.test_item_speader), SpeakerTestActivity.class));
-        mItemTargets.put("mic", new TestItem(sContext.getString(R.string.test_item_mic), RecordTestActivity.class));
-        mItemTargets.put("micarray", new TestItem(sContext.getString(R.string.test_item_micarray), NarTestActivity.class));
-        mItemTargets.put("key", new TestItem(sContext.getString(R.string.test_item_key), KeyTestActivity.class));
-        mItemTargets.put("camera", new TestItem(sContext.getString(R.string.test_item_camera), CameraTestActivity.class));
-        mItemTargets.put("backlight", new TestItem(sContext.getString(R.string.test_item_backlight), BacklightTestActivity.class));
-        mItemTargets.put("battery", new TestItem(sContext.getString(R.string.test_item_battery), BatteryTestActivity.class));
-        mItemTargets.put("light", new TestItem(sContext.getString(R.string.test_item_light), LightSensorActivity.class));
-        mItemTargets.put("temp", new TestItem(sContext.getString(R.string.test_item_tempsensor), TemperatureSensorTestActivity.class));
-        mItemTargets.put("usb", new TestItem(sContext.getString(R.string.test_item_usb), UsbTestActivity.class));
-        mItemTargets.put("sd", new TestItem(sContext.getString(R.string.test_item_sdcard), SdcardTestActivity.class));
-        mItemTargets.put("gpio", new TestItem(sContext.getString(R.string.test_item_gpio), GpioTestActivity.class));
-        mItemTargets.put("wiegand", new TestItem(sContext.getString(R.string.test_item_wiegand), WiegandTestActivity.class));
-        mItemTargets.put("nd01", new TestItem(sContext.getString(R.string.test_item_nd01), ND01TestActivity.class));
-        mItemTargets.put("pwm", new TestItem(sContext.getString(R.string.test_item_pwm), PwmTestActivity.class));
-        mItemTargets.put("led", new TestItem(sContext.getString(R.string.test_item_led), LedTestActivity.class));
-        mItemTargets.put("wifitransfer", new TestItem(sContext.getString(R.string.test_item_wifi_transfer),
-                WiFiTransferTestActivity.class));
+        mItemTargets.put("display", new TestItem("display", sContext.getString(R.string.test_item_display), LcdTestActivity.class));
+        mItemTargets.put("touch", new TestItem("touch", sContext.getString(R.string.test_item_touch), TouchTestActivity.class));
+        mItemTargets.put("spk", new TestItem("spk", sContext.getString(R.string.test_item_speader), SpeakerTestActivity.class));
+        mItemTargets.put("mic", new TestItem("mic", sContext.getString(R.string.test_item_mic), RecordTestActivity.class));
+//麦克风阵列        mItemTargets.put("micarray", new TestItem(sContext.getString(R.string.test_item_micarray), NarTestActivity.class));
+        mItemTargets.put("key", new TestItem("key", sContext.getString(R.string.test_item_key), KeyTestActivity.class));
+//摄像头        mItemTargets.put("camera", new TestItem(sContext.getString(R.string.test_item_camera), CameraTestActivity.class));
+        mItemTargets.put("backlight", new TestItem("backlight", sContext.getString(R.string.test_item_backlight), BacklightTestActivity.class));
+        mItemTargets.put("battery", new TestItem("battery", sContext.getString(R.string.test_item_battery), BatteryTestActivity.class));
+//光感        mItemTargets.put("light", new TestItem(sContext.getString(R.string.test_item_light), LightSensorActivity.class));
+//温湿度        mItemTargets.put("temp", new TestItem(sContext.getString(R.string.test_item_tempsensor), TemperatureSensorTestActivity.class));
+        mItemTargets.put("usb", new TestItem("usb", sContext.getString(R.string.test_item_usb), UsbTestActivity.class));
+//sd卡        mItemTargets.put("sd", new TestItem(sContext.getString(R.string.test_item_sdcard), SdcardTestActivity.class));
+//GPIO        mItemTargets.put("gpio", new TestItem(sContext.getString(R.string.test_item_gpio), GpioTestActivity.class));
+//        mItemTargets.put("wiegand", new TestItem(sContext.getString(R.string.test_item_wiegand), WiegandTestActivity.class));
+//        mItemTargets.put("nd01", new TestItem(sContext.getString(R.string.test_item_nd01), ND01TestActivity.class));
+//        mItemTargets.put("pwm", new TestItem(sContext.getString(R.string.test_item_pwm), PwmTestActivity.class));
+//        mItemTargets.put("led", new TestItem(sContext.getString(R.string.test_item_led), LedTestActivity.class));
+//        mItemTargets.put("wifitransfer", new TestItem(sContext.getString(R.string.test_item_wifi_transfer),
+//                WiFiTransferTestActivity.class));
     }
 
     private void loadConfig() {

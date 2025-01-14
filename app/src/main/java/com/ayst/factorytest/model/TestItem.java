@@ -30,8 +30,8 @@ public class TestItem implements Serializable {
         this.state = state;
     }
 
-    public TestItem(String name, Class<? extends Activity> activity) {
-        this.key = "";
+    public TestItem(String key,String name, Class<? extends Activity> activity) {
+        this.key = key;
         this.name = name;
         this.param = "";
         this.result = "";

@@ -47,7 +47,6 @@ public class BacklightTestActivity extends ChildTestActivity {
             public void onProgressChanged(SeekBar seekBar, int value, boolean b) {
                 App.getTBManager().setBrightness(value);
 
-                Log.d("ldslds","value:"+value);
                 Settings.System.putInt(getApplicationContext().getContentResolver(),
                         Settings.System.SCREEN_BRIGHTNESS, value);
             }
