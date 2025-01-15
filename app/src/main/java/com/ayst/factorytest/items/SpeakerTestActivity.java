@@ -34,7 +34,7 @@ public class SpeakerTestActivity extends ChildTestActivity implements MediaPlaye
     @Override
     protected void onStart() {
         super.onStart();
-        play(R.raw.play);
+        play(R.raw.factory_test_left_right_sound);
     }
 
     @Override

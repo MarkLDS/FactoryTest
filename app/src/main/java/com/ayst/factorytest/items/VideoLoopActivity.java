@@ -38,7 +38,7 @@ public class VideoLoopActivity extends BaseActivity {
         btnBack = findViewById(R.id.btnBack);
         chronometer = findViewById(R.id.chronometer);
 
-        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.test5;
+        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.factory_test_video;
         Uri uri = Uri.parse(videoPath);
 
         videoView.setVideoURI(uri);
