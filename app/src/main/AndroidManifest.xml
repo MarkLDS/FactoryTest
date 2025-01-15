@@ -63,6 +63,7 @@
         <activity android:name=".items.KeyTestActivity" />
         <activity android:name=".items.RecordTestActivity" />
         <activity android:name=".items.SpeakerTestActivity" />
+        <activity android:name=".items.HeadSetTestActivity" />
         <activity android:name=".items.TouchTestActivity" />
         <activity android:name=".items.LcdTestActivity" />
         <activity android:name=".items.MobileNetTestActivity" />

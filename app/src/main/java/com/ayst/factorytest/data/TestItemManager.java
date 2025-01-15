@@ -12,6 +12,7 @@ import com.ayst.factorytest.items.BluetoothTestActivity;
 import com.ayst.factorytest.items.CameraTestActivity;
 import com.ayst.factorytest.items.EthernetTestActivity;
 import com.ayst.factorytest.items.GpioTestActivity;
+import com.ayst.factorytest.items.HeadSetTestActivity;
 import com.ayst.factorytest.items.HumanSensorActivity;
 import com.ayst.factorytest.items.InfoTestActivity;
 import com.ayst.factorytest.items.KeyTestActivity;
@@ -114,6 +115,7 @@ public class TestItemManager {
         mItemTargets.put("touch", new TestItem("touch", sContext.getString(R.string.test_item_touch), TouchTestActivity.class));
         mItemTargets.put("spk", new TestItem("spk", sContext.getString(R.string.test_item_speader), SpeakerTestActivity.class));
         mItemTargets.put("mic", new TestItem("mic", sContext.getString(R.string.test_item_mic), RecordTestActivity.class));
+        mItemTargets.put("headset", new TestItem("headset", sContext.getString(R.string.test_item_headset), HeadSetTestActivity.class));
 //麦克风阵列        mItemTargets.put("micarray", new TestItem(sContext.getString(R.string.test_item_micarray), NarTestActivity.class));
         mItemTargets.put("key", new TestItem("key", sContext.getString(R.string.test_item_key), KeyTestActivity.class));
 //摄像头        mItemTargets.put("camera", new TestItem(sContext.getString(R.string.test_item_camera), CameraTestActivity.class));

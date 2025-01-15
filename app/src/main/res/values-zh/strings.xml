@@ -27,6 +27,7 @@
     <string name="test_item_touch">触摸</string>
     <string name="test_item_speader">喇叭</string>
     <string name="test_item_mic">麦克风</string>
+    <string name="test_item_headset">耳机</string>
     <string name="test_item_micarray">麦克风阵列</string>
     <string name="test_item_key">按键</string>
     <string name="test_item_camera">摄像头</string>
@@ -202,5 +203,9 @@
     <string name="vibrate_is_ok">马达是否在震动？</string>
     <string name="test_vibrate">震动</string>
     <string name="main_loop_video">视频循环</string>
+    <string name="play_audio">播放音频</string>
+    <string name="play_left_right_audio">播放一段左·右·立体音各5秒的音频</string>
+    <string name="please_insert_headset">请插入耳机测试</string>
+    <string name="play_record">播放录音</string>
 
 </resources>

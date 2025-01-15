@@ -21,6 +21,7 @@
     <string name="test_item_touch">Touch Panel</string>
     <string name="test_item_speader">Speaker</string>
     <string name="test_item_mic">Microphone</string>
+    <string name="test_item_headset">Headset</string>
     <string name="test_item_micarray">Microphone Array</string>
     <string name="test_item_key">Key</string>
     <string name="test_item_camera">Camera</string>
@@ -201,4 +202,8 @@
     <string name="vibrate_is_ok">Is the motor vibrating？</string>
     <string name="test_vibrate">Vibrate</string>
     <string name="main_loop_video">video loop</string>
+    <string name="play_audio">播放音频</string>
+    <string name="play_left_right_audio">播放一段左·右·立体音各5秒的音频</string>
+    <string name="please_insert_headset">请插入耳机测试</string>
+    <string name="play_record">播放录音</string>
 </resources>

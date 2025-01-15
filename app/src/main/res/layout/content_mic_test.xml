@@ -28,9 +28,9 @@
 
     <com.ayst.dbv.DashboardView
         android:id="@+id/dashboard"
-        android:layout_width="@dimen/dashboard_width"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         app:dbv_firstColor="@color/red"
