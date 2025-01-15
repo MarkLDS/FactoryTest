@@ -201,5 +201,6 @@
     <string name="rest_result_ignore">"忽略 %1$s 项\n"</string>
     <string name="vibrate_is_ok">马达是否在震动？</string>
     <string name="test_vibrate">震动</string>
+    <string name="main_loop_video">视频循环</string>
 
 </resources>

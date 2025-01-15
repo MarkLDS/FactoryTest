@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:sharedUserId="android.uid.system"
     package="com.ayst.factorytest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
@@ -66,6 +71,7 @@
         <activity android:name=".items.WifiTestActivity" />
         <activity android:name=".items.InfoTestActivity" />
         <activity android:name=".items.VibrateTestActivity" />
+        <activity android:name=".items.VideoLoopActivity" />
         <activity
             android:name=".MainActivity"
             android:configChanges="locale|screenSize|screenLayout|uiMode|layoutDirection">

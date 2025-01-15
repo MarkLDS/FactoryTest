@@ -26,6 +26,7 @@ import com.ayst.factorytest.adapter.TestItemAdapter;
 import com.ayst.factorytest.base.BaseActivity;
 import com.ayst.factorytest.data.TestItemManager;
 import com.ayst.factorytest.data.TestResultExport;
+import com.ayst.factorytest.items.VideoLoopActivity;
 import com.ayst.factorytest.model.ResultEvent;
 import com.ayst.factorytest.model.TestItem;
 import com.ayst.factorytest.utils.SPUtils;
@@ -68,6 +69,8 @@ public class MainActivity extends BaseActivity {
     Button mShowQRCodeBtn;
     @BindView(R.id.btn_clean_result)
     Button mCleanResultBtn;
+    @BindView(R.id.btnVideoLoop)
+    Button btnVideoLoop;
 
     private int mNextItem = INVALID_ITEM;
     private Gson mGson = new Gson();
@@ -153,6 +156,14 @@ public class MainActivity extends BaseActivity {
 
                         mTestItemAdapter.setList(mTestItems);
                         mTestItemAdapter.notifyDataSetChanged();
+            }
+        });
+
+        btnVideoLoop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, VideoLoopActivity.class);
+                startActivity(intent);
             }
         });
 
