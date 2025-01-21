@@ -2,6 +2,7 @@ package com.ayst.factorytest.items;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.text.BidiFormatter;
 import android.widget.TextView;
 
 import com.ayst.factorytest.App;
@@ -57,7 +58,7 @@ public class InfoTestActivity extends ChildTestActivity {
 
         mModelTv.setText(Build.MODEL);
         mAndroidVersionTv.setText(Build.VERSION.RELEASE);
-        mFirmwareVersionTv.setText(App.getTBManager().getFirmwareVersion());
+        mFirmwareVersionTv.setText(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
         mWifiMacTv.setText(AppUtils.getWifiMac(this));
         mBtMacTv.setText(AppUtils.getBtMac(this));
         mEthMacTv.setText(AppUtils.getEth0Mac(this));

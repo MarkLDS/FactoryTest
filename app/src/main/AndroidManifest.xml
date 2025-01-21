@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:sharedUserId="android.uid.system"
     package="com.ayst.factorytest">
-
     <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
