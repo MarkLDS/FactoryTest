@@ -186,14 +186,48 @@ public class TouchTestView extends View {
     private void createRect() {
         int width = getWidth();
         int height = getHeight();
-        float rectWidth = (float) Math.max(width, height) / 30;
+        float rectWidth = (float) Math.max(width, height) / 20;
 
         Log.i(TAG, "createRect, width: " + width + ", height: " + height + ", rectWidth=" + rectWidth);
 
         mRects = new ArrayList<>();
+        for (int i = 0; i < width / rectWidth; i++) {
+            TestRect rect1 = new TestRect();
+            rect1.top = 0;
+            rect1.left = i * rectWidth;
+            rect1.right = rect1.left + rectWidth;
+            rect1.bottom = rectWidth;
+            mRects.add(rect1);
+        }
+        for (int i = 0; i < width / rectWidth; i++) {
+            TestRect rect1 = new TestRect();
+            rect1.top = height - rectWidth;
+            rect1.left = i * rectWidth;
+            rect1.right = rect1.left + rectWidth;
+            rect1.bottom = height;
+            mRects.add(rect1);
+        }
+        for (int i = 1; i < (height - (1 * rectWidth)) / rectWidth; i++) {
+            TestRect rect1 = new TestRect();
+            rect1.top = i * rectWidth;
+            rect1.left = 0;
+            rect1.right = rectWidth;
+            rect1.bottom = rect1.top + rectWidth;
+            mRects.add(rect1);
+        }
+        for (int i = 1; i < (height - (1 * rectWidth)) / rectWidth; i++) {
+            TestRect rect1 = new TestRect();
+            rect1.top = i * rectWidth;
+            rect1.left = width - rectWidth;
+            rect1.right = width;
+            rect1.bottom = rect1.top + rectWidth;
+            mRects.add(rect1);
+        }
+
+
         // 区分屏幕方向，尽量排满整个屏幕
         if (width > height) {
-            for (int i = 0; i < width / rectWidth; i++) {
+            for (int i = 2; i < (width - (2 * rectWidth)) / rectWidth; i++) {
                 TestRect rect1 = new TestRect();
                 rect1.top = i * (rectWidth * height / width);
                 rect1.left = i * rectWidth;
@@ -209,7 +243,7 @@ public class TouchTestView extends View {
                 mRects.add(rect2);
             }
         } else {
-            for (int i = 0; i < height / rectWidth; i++) {
+            for (int i = 2; i < (height - (2 * rectWidth)) / rectWidth; i++) {
                 TestRect rect1 = new TestRect();
                 rect1.top = i * rectWidth;
                 rect1.left = i * (rectWidth * width / height);
